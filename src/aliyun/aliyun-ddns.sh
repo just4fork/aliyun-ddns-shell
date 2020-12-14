@@ -243,6 +243,7 @@ function fun_get_local_wan_ip(){
     else
         fun_wirte_log "${message_info_tag}本机外网ip:${var_local_wan_ip}"
     fi
+
 }
 
 # 获取DDNS域名当前解析记录IP
@@ -871,8 +872,8 @@ function main_fun_only_run(){
     fun_get_local_wan_ip
     fun_get_domian_server_ip
     fun_get_now_timestamp
-    # 暂时注释
-    # fun_is_wan_ip_and_domain_ip_same
+    var_local_wan_ip="127.0.0.1"
+    fun_is_wan_ip_and_domain_ip_same
     fun_update_record
     exit 0
 }
