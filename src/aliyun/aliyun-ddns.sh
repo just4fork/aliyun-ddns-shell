@@ -871,7 +871,8 @@ function main_fun_only_run(){
     fun_get_local_wan_ip
     fun_get_domian_server_ip
     fun_get_now_timestamp
-    fun_is_wan_ip_and_domain_ip_same
+    # 暂时注释
+    # fun_is_wan_ip_and_domain_ip_same
     fun_update_record
     exit 0
 }
